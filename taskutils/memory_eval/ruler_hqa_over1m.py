@@ -98,6 +98,7 @@ def get_pred(data, args, out_file):
             print("-"*80)
             print(item['judge_sub_em'])
             print("="*40 + "New Item End" + "="*40)
+    fout.close()
     print(f"ruler_hqa [{args.length}]")
     for k, v in scores.items():
         print(f"{k}: {round(sum(v) * 100 /len(v), 2)}")
