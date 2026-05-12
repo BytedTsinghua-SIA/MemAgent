@@ -19,11 +19,13 @@
 ---
 
 > [!IMPORTANT]
+> 
 > **🔥 News!!!**
 > - **[2025/07]** We provide a **quickstart** script that makes using **MemAgent** super easy, see the **Quickstart** section below.
 > - **[2025/06]** We release **RL-MemAgent-14B** and **RL-MemAgent-7B** models achieving nearly lossless performance on 3.5M token contexts task.
 
 ---
+
 ## 📖Introduction
 
 We propose a novel long-context processing framework — **MemAgent**, which directly optimizes long-context tasks through end-to-end Reinforcement Learning without altering the underlying model architecture. MemAgent has demonstrated superb long-context capabilities, being able to extrapolate from an 8K context trained on 32K text to a 3.5M QA task with performance loss < 5% and achieves 95%+ accuracy in 512K RULER test.
@@ -89,6 +91,8 @@ python quickstart.py --model gpt-4o-2024-11-20
 ```
 
 ## Reproducibility
+
+### **Use `vllm==0.8.2` to reproduce the experiments**
 
 ### Performance
 
