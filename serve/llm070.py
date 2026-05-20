@@ -222,7 +222,6 @@ if __name__ == "__main__":
     p = subprocess.Popen(cmd, shell=True)
     try:
         p.wait()
-    except:
+    except KeyboardInterrupt:
         p.terminate()
         print("interrupted")
-        pass
