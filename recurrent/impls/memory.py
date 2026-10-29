@@ -202,7 +202,7 @@ class MemoryAgent(RAgent):
             self.meta_info = {'input_pad_to': self.max_input_length,
                          'pad_to': self.config.gen_pad_to,
                          'generation_kwargs': {
-                          'max_tokens': self.config.gen_max_tokens_memorization,
+                          'max_tokens': self.config.gen_max_tokens_final_response,
                           'n': 1 # note that we have already repeat n times in ray_trainer
                         }}
             logger.info(f'FINAL TURN: MemoryAgent.next() done')
